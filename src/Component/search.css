@@ -1,0 +1,65 @@
+.search{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width:90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    border-radius: 30px;
+    padding:20px;
+    margin:0px auto;
+}
+.ratingalign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:30%;
+    height:50px;
+    background-color: white;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0.541);
+    font-size: 20px;
+}
+.searchingform{
+width:79%;
+height:45px;
+border:none;
+padding:10px;
+}
+.titlelabel{
+    height:50px;
+    width:40%;
+    background-color:rgba(201, 194, 194, 0.473);
+    margin:0;
+    padding-top: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0.541);
+    font-size: 20px;
+
+}
+.searchingalign{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width:600px;
+    border:1px solid rgba(0, 0, 0, 0.541);
+}
+.ratelabel{
+width:40%;
+height: 50px;
+background-color: rgba(201, 194, 194, 0.473);
+margin:0;
+padding:0;
+border-radius:10px;
+padding-top: 10px;
+border:1px solid rgba(0, 0, 0, 0.541);
+}
+.stars{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 0;
+}

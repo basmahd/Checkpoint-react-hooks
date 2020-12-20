@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.header {
+  background-color: #282c34;
+  height: 120px;
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+ color: yellow;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 70px;
+ }
+
+.icon{
+  color: rgba(255, 0, 0, 0.658);
+  border-radius:2px;
+  font-size:40px;
+}
+
+@keyframes move-text {
+  0% { bottom: -0.2em; opacity: 1; }
+  50% { bottom: 0.2em; }
+  100% { bottom: 0; opacity: 1; }
+}
+
+.ajoutmovie{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+
