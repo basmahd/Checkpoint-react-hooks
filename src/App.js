@@ -7,6 +7,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddMovies from "./Component/AddMovies";
 import Search from "./Component/Search";
+import DetailsMovie from "./Component/DetailsMovie";
+// Router
+import { Route , Switch } from "react-router-dom";
 
 function App() {
   const [ListOfMovies, setListOfMovies] = useState([
@@ -20,6 +23,7 @@ function App() {
         edit: false,
       },
       id: "2",
+      trailerlink:"https://www.youtube.com/embed/rBxcF-r9Ibs",
       watched: false,
     },
     {
@@ -30,6 +34,7 @@ function App() {
       PosterUrl: "https://fr.web.img2.acsta.net/medias/nmedia/18/63/97/89/18949761.jpg",
       rate: {
         value: 5,
+        trailerlink:"https://www.youtube.com/embed/rBxcF-r9Ibs",
         edit: false,
       },
       id: "3",
@@ -43,6 +48,7 @@ function App() {
         "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh0arJamf7P2sJw6zz_yyvtDDRvv1QE8kUySIG0ta35nIza5kZ",
       rate: {
         value: 2,
+        trailerlink:"https://www.youtube.com/embed/rBxcF-r9Ibs",
         edit: false,
       },
       id: "5",
@@ -70,8 +76,9 @@ function App() {
 console.log(ListOfMovies);
   return (
     <div>
+      <Switch>
+        <Route exact path="/">
       <div className="header">
- 
         <FontAwesomeIcon className="icon" icon={faFilm} />
         <h1>
           {" "}
@@ -95,6 +102,12 @@ console.log(ListOfMovies);
         <AddMovies addMovie={addMovie} />
         </div>
       </div>
+      </Route>
+      <Route
+          path="/title"
+          render={(props) => <DetailsMovie data={ListOfMovies} {...props} />}
+        />
+      </Switch>
     </div>
   );
 }
